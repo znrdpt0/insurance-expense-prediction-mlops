@@ -1,0 +1,54 @@
+# Hospital Cost Prediction – MLOps Pipeline
+
+Bu proje, hastaneye yatış anında hastanın demografik ve temel sağlık risk ölçümlerini kullanarak
+hastane maliyetlerini tahmin etmeyi amaçlar. Proje MLOps prensipleriyle geliştirilmiştir.
+
+## Hedefler
+- Hastane maliyetlerini tahmin eden ML modeli geliştirmek
+- Model performansını izlemek ve sürümlemek (MLflow)
+- CI/CD ile otomatik eğitim ve deployment
+- Ölçeklenebilir ve tekrar kullanılabilir ML pipeline tasarımı
+
+## Proje Aşamaları
+
+1. **Repo Kurulumu**
+   - GitHub repo oluşturma
+   - Proje klasör ve dosya yapısını oluşturma
+   - .gitignore ve requirements.txt hazırlanması
+
+2. **Veri Keşfi (EDA)**
+   - Ham verilerin incelenmesi
+   - Eksik değer analizi
+   - Temel istatistik ve görselleştirme
+
+3. **Veri İşleme**
+   - Feature engineering
+   - Normalizasyon/standardizasyon
+   - Train-test split
+
+4. **Model Geliştirme**
+   - Modellerin seçimi ve eğitimi
+   - Hyperparameter tuning
+   - Model performans değerlendirmesi
+
+5. **ML Pipeline Kurulumu**
+   - Veri işleme + model eğitim + değerlendirme adımlarının birleştirilmesi
+   - Pipeline’ların modüler tasarımı
+
+6. **Model İzleme ve Kayıt**
+   - MLflow ile model sürümleme
+   - Performans metriklerinin kaydı
+
+7. **Deployment**
+   - Modelin containerize edilmesi (Docker)
+   - API veya batch inference servisine entegrasyon
+   - CI/CD pipeline kurulumu
+
+8. **Test ve Validasyon**
+   - Unit test ve integration testler
+   - Model ve pipeline doğrulama
+
+9. **Dokümantasyon**
+   - Proje dokümantasyonu
+   - Kullanım ve kurulum kılavuzu
+
