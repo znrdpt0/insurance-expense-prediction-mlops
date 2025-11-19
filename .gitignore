@@ -1,22 +1,13 @@
-# Python cache ve bytecode
 __pycache__/
 *.py[cod]
-
-# Paylaşılamayacak/derleme dosyaları
 *.so
 *.egg
 *.egg-info/
 dist/
 build/
-
-# Log ve ortam dosyaları
 *.log
 *.env
-
-# MLflow run klasörü
 mlruns/
-
-# Sanal ortam
 venv/
-
+*.ipynb_checkpoints
 
