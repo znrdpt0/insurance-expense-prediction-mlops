@@ -19,7 +19,4 @@ mlruns/
 # Sanal ortam
 venv/
 
-# Data klasörü (büyük dosyalar için)
-data/
-
 
