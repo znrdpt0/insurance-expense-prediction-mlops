@@ -32,9 +32,14 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-    - name: Set up QEMU
-      uses: docker/setup-qemu-action@v3
-
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: true
+        # Hem Intel (amd64) hem Apple Silicon/Raspberry Pi (arm64) için build al
+        platforms: linux/amd64,linux/arm64
+        tags: ${{ secrets.DOCKER_USERNAME }}/insurance-prediction-app:latest
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
 
