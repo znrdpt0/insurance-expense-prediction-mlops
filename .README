@@ -34,7 +34,7 @@ hastane maliyetlerini tahmin etmeyi amaçlar. Proje MLOps prensipleriyle gelişt
 5. **ML Pipeline Kurulumu**
    - Veri işleme + model eğitim + değerlendirme adımlarının birleştirilmesi
    - Pipeline’ların modüler tasarımı
-
+   
 6. **Model İzleme ve Kayıt**
    - MLflow ile model sürümleme
    - Performans metriklerinin kaydı
