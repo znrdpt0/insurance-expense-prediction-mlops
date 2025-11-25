@@ -16,6 +16,6 @@ COPY . .
 # Streamlit'in kullandığı 8501 portunu dış dünyaya açıyoruz
 EXPOSE 8501
 
-# 7. Container başlatıldığında çalışacak komut
 
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Streamlit'i doğrudan çağırmak yerine Python üzerinden çağırıyoruz
+CMD ["python", "-m", "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
