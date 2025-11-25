@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 
 # (--no-cache-dir ile imaj boyutunu şişirmemeyi hedefliyoruz)
-RUN pip install --no-cache-dir -r requirements.txts
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
