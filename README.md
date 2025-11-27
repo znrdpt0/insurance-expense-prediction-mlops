@@ -22,7 +22,7 @@ Proje, modern MLOps prensiplerine uygun olarak **mikroservis mimarisine** benzer
 ```mermaid
 graph LR
     User[Kullanıcı] -- Web Tarayıcısı --> Streamlit[Streamlit Web Arayüzü]
-    Streamlit -- Girdi Verisi --> Model[ML Model (Scikit-Learn)]
+    Streamlit -- Girdi Verisi --> Model["ML Model (Scikit-Learn)"]
     Model -- Tahmin Sonucu --> Streamlit
     
     subgraph MLOps Pipeline

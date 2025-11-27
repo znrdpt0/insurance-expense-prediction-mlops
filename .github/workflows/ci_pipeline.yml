@@ -3,8 +3,18 @@ name: CI/CD Pipeline - Insurance Cost Prediction
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:        
+      - 'README.md'      
+      - 'docs/**'        
+      - '**.md'          
+      - 'LICENSE'       
+      
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - 'README.md'
+      - 'docs/**'
+      - '**.md'
 
 jobs:
   build-and-push:
