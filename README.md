@@ -26,7 +26,7 @@ graph LR
     Model -- Tahmin Sonucu --> Streamlit
     
     subgraph MLOps Pipeline
-    Code[GitHub Code Push] --> Actions[GitHub Actions (CI)]
-    Actions -- Linting & Test --> Build[Docker Buildx]
-    Build -- Multi-Platform Image --> DockerHub[Docker Hub Registry]
+    Code[Kod Push] --> Actions[GitHub Actions CI]
+    Actions -- "Linting & Test" --> Build[Docker Buildx]
+    Build -- "Multi-Platform Image" --> DockerHub[Docker Hub Registry]
     end
